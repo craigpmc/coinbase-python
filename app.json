@@ -1,0 +1,30 @@
+{
+  "name": "coinbase-python",
+  "description": "Coinbase API for BTC ETH and LTC",
+  "scripts": {
+  },
+  "env": {
+    "LIBRATO_PASSWORD": {
+      "required": true
+    },
+    "LIBRATO_TOKEN": {
+      "required": true
+    },
+    "LIBRATO_USER": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "librato"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs.git"
+    }
+  ]
+}
